@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+body{
+	font-family: 'Crimson Text', serif;
+	background-color: #999;
+	text-align: center;
+	background: url(../images/bg.jpg) repeat;
+}
+p{
+	padding: 20px 0;
+}
+hr{
+	width: 150px;
+}
+button{
+	font-family: 'Crimson Text', serif;	
+}
+input{
+  font-family: 'Crimson Text', serif;
+  width: 32px;
+  line-height: 20px;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #000066;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.1);
+}
+img{
+	width: 400px;
+	height: 300px;
+	border-radius:20px
+}
+.container{
+	width: 60%;
+	padding: 40px;
+	margin: 20px auto;
+	background: rgba(220,220,220,0.9);
+	border-radius: 10px;
+	border: 2px solid #FFD700;
+}
+.triviapanel{
+	position: relative;
+	height: 500px;
+}
+.innerpanel{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.setdef{
+	font-size: 20px;
+	color: #333;
+	padding: 0 0 40px 0;
+}
+.hide{
+	display: none;
+}
+.quescount{
+  font-size: 20px;
+  color: #330033;
+}
+.spacer{
+	padding: 20px 0;
+}
+.headerRow{
+	margin-bottom: 20px;
+	font-size: 3rem;
+	font-weight: bold;
+	letter-spacing: 3px;
+	color: #cc9900;
+}
+.timeRow{
+	color: #006699;
+	font-size: 25px;	
+}
+.red-text{
+	color: red;
+}
+.quesRow{
+	color: #006633;
+	font-size: 25px;
+	line-height: 40px;
+}
+.btn{
+	display: block;
+	color: #000066;
+	margin: 5px auto;
+	font-size: 20px;
+	width: 50%;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 10px;
+	background: rgba(0,0,0,0.1);
+	border: none;
+}
+.btn:hover{
+	background: rgba(0,0,0,0.5);
+	/*font-weight: bold;*/
+	cursor: pointer;
+	color: #fff;
+	
+}
+#message{
+  color: #000066;
+  font-size: 40px;
+  padding: 0;
+}
+#show{
+  color: #330033;
+  font-size: 30px;
+}
+#resheader{
+	color: #330033;
+	font-size: 30px;
+	line-height: 40px;
+}
+#corrects{
+	color: #009900;
+	font-size: 40px;
+}
+#incorrects{
+  color: #990000;
+  font-size: 40px;
+}
+#timeouts{
+  color: #cc6600;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.footer {
+	background-color: #666;
+	color: #ccc;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	line-height: 50px;
+	border-top: 2px solid #000066;
+	text-align: center;	
+	font-size: 14px
+}

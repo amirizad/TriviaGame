@@ -4,18 +4,55 @@
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TriviaGame</title>
+	<title>Trivia</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+	<div class="container">
+		<p class="headerRow">Totally Trivial Trivia!</p>
+		<hr>
+		<div class="triviapanel">
+			<div id="startdiv" class="innerpanel">
+				<p id="ques-set" class="setdef">Trivia Questions: <input type="number" id="quesqty" min="5" max="40" value=""></p>
+				<p id="timer-set" class="setdef">Time to Answer: <input type="number" id="ans-t" min="15" max="60" value=""> seconds</p>
+				<p id="wait-set" class="setdef">Wait Time to Next Question: <input type="number" id="wait-t" min="3" max="15" value=""> seconds</p>
+				<button id="startbtn" class="btn start">Ready to Go? Click!!!</button>
+			</div>
+			<div id="askdiv" class="innerpanel hide">
+				<p class="timeRow">Time Remaining: <span id="timer"></span> Seconds</p>
+				<p class="quescount">Trivia Question: <span id="ques"></span> of <span id="t-ques"></span></p>
+				<hr>
+				<p id="quesRow" class="quesRow"></p>
+				<p class="answers">
+					<button id="q0" href="#" class="btn choices" value="0"></button>
+					<button id="q1" href="#" class="btn choices" value="1"></button>
+					<button id="q2" href="#" class="btn choices" value="2"></button>
+					<button id="q3" href="#" class="btn choices" value="3"></button>
+				</p>			
+			</div>
+			<div id="ansdiv" class="innerpanel hide">
+				<p id="quesAns" class="quesRow"></p>
+				<p id="message"></p>
+				<p id="show">The Answer was: <span id="correctans"></span></p>
+				<p id="image"><img src="" alt="" id="ansimg"></p>
+			</div>
+			<div id="resultdiv" class="innerpanel hide">
+				<p id="resheader">All done<br>Here's how you did!</p>
+				<p id="corrects">Correct Answers: <span id="correct"></span></p>
+				<p id="incorrects">Incorrect Answers: <span id="incorrect"></span></p>
+				<p id="timeouts">Unanswered: <span id="unanswered"></span></p>
+				<button id="restartbtn" class="btn start">Start Over?</button>
+			</div>			
+		</div>
+	</div>	
 
   <div id="footer" class="footer">
     <div>&copy; Copyright <script>document.write(new Date().getFullYear())</script> Amir Izadpanah</div>
   </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>        
-	<script src="javascript/app.js"></script>
+	<script src="assets/javascript/app.js"></script>
 </body>
 </html>
