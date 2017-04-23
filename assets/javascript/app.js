@@ -11,6 +11,7 @@ var triviaData = {},
 	    	currQs = {
 	    							quesIndex : 0,
 	    							ansIndex : 0,
+	    							image : "",
 	    							status : ""
 	    						};
 
@@ -110,6 +111,7 @@ function nextTrivia(){
 	} else {
 		currQs.quesIndex = Math.floor(Math.random() * triviaData.length);
 		currQs.ansIndex = triviaData[currQs.quesIndex].answer;
+		currQs.image = 'assets/images/' + triviaData[currQs.quesIndex].image;
 		$('#ques').html(user.asked);
 		$('#t-ques').html(user.questions);
 		$('#quesRow').html(triviaData[currQs.quesIndex].question);
@@ -146,7 +148,7 @@ function showAnswer(status){
 	$('#quesAns').html($('#quesRow').html());
 	var answer = $( '.choices[value=' + currQs.ansIndex + ']' ).html();
 	$('#correctans').html(answer);
-	$('#ansimg').attr('src','assets/images/' + currQs.quesIndex + '.jpg');
+	$('#ansimg').attr('src', currQs.image);
 	triviaData.splice(currQs.quesIndex, 1);
 	setTimeout(nextTrivia, user.waittime * 1000);
 }
