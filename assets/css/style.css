@@ -33,7 +33,7 @@ img{
 .container{
 	width: 60%;
 	padding: 40px;
-	margin: 20px auto;
+	margin: 20px auto 70px;
 	background: rgba(220,220,220,0.9);
 	border-radius: 10px;
 	border: 2px solid #FFD700;
